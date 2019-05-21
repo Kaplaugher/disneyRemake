@@ -1,10 +1,15 @@
 <template>
-  <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+  <div
+    id="app"
+    class="flex bg-gray-900 text-white min-h-screen"
+  >
+    <div class="nav w-24 fixed bg-blue-500 min-h-screen ml-24">
+      sidebar goes here
     </div>
-    <router-view />
+    <div class="w-full">
+      <router-view />
+
+    </div>
   </div>
 </template>
 
