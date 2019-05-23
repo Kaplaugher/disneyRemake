@@ -2,9 +2,9 @@
   <div id="app" class="flex bg-gray-900 text-white min-h-screen">
     <SidebarNavigation />
     <div class="w-full">
-      <div class="container mx-auto">
+      <transition name="page" mode="out-in">
         <router-view />
-      </div>
+      </transition>
     </div>
   </div>
 </template>
